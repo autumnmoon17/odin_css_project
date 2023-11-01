@@ -15,7 +15,7 @@ body {
 }
 
 .logo {
-    height: 50px;
+    height: auto;
     width: 150px;
     padding: 0px 8px;
 }
@@ -57,6 +57,10 @@ li {
     font-family: 'Roboto', sans-serif;
 }
 
+.logo {
+    margin-top: 10px;
+}
+
 .hero {
     display: flex;
     justify-content: space-evenly;
@@ -67,8 +71,10 @@ li {
 }
 
 .hero-image {
-    height: 400px;
-    width: 400px;
+    height: 600px;
+    width: 600px;
+    margin-left: 30px;
+    flex: 1 1 auto;
 }
 
 .wrapper {
@@ -78,13 +84,28 @@ li {
 }
 
 .hero-button {
-    width: 100px;
+    width: 200px;
+    font-size: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f69869;
+    color: white;
+    font-weight: 600;
+    border: #ff5400;
 }
 
 .content-one {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+}
+
+.content-one-title {
+    font-size: 60px;
+    color: #ff5400;
+    margin: 60px auto;
+    font-weight: 600;
 }
 
 .content-images {
@@ -94,10 +115,23 @@ li {
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
+    font-size: 20px;
+    margin: 0px auto;
+}
+
+.img-cap {
+    margin: 5px auto;
+    font-size: 18px;
+}
+
+.img-cont {
+    max-width: 25%;
 }
 
 .image-group {
-    flex: 1 1 0;
+    flex: 1 1 auto;
+    max-width: 100%;
+    height: auto;
 }
 
 .content-one div {
@@ -111,6 +145,14 @@ li {
     align-items: center;
     max-width: 60%;
     margin: 0 auto;
+    font-size: 48px;
+    font-style: italic;
+}
+
+.quotation {
+    background-color: #f69869;
+    margin: 20px 0;
+    padding: 80px;
 }
 
 .quote {
@@ -127,8 +169,35 @@ li {
     justify-content: space-evenly;
     max-width: 70%;
     margin: 0 auto;
+    background-color: #ff5400;
+    padding: 40px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-size: 18px;
+    color: white;
 }
 
+.interest {
+    font-size: 32px;
+    margin: 5px auto;
+    font-weight: 800;
+}
+
+.cta-wrap {
+    padding: 60px;
+}
+
+.content-cta button {
+    width: 150px;
+    height: 40px;
+    margin: auto 0px;
+    font-size: 18px;
+    border: white solid 2px;
+    color: white;
+    background-color: #ff5400;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
 
 .content {
     flex: 1;
@@ -137,5 +206,20 @@ li {
 .footer {
     display: flex;
     justify-content: center;
+    align-items: center;
+    background-color: #ff5400;
+    color: white;
+    font-size: 18px;
+    padding: 40px;
+    margin-top: 20px;
 }
+
+.hero-desc, .hero-caption {
+    margin: 0px 0px 20px 0px;
+}
+
+.hero-desc {
+    font-size: 20px;
+}
+
 
